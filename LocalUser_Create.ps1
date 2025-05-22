@@ -6,7 +6,7 @@
 $name = "Yi Miao"
 $accountname = "YiMiao"
 $description = "Powershell üben"
-$password = "Pa$$w0rd!1992"
+$password = "Passw0rd!1992"
 $computer = "localhost"
 
 "Das Benutzerkonto $name legt auf $computer an."
