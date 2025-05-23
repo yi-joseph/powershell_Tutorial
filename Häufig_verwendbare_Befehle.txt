@@ -1,0 +1,2 @@
+#enaio Dienste per powershell anzeigen: 
+Get-Service | Where-Object {$_.Name -like "enaio*"}
