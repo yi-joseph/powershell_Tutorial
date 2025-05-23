@@ -1,3 +1,35 @@
+#1
 #enaio Dienste per powershell anzeigen: 
 #Achtung: nicht nur name sonderauch displayname
 Get-Service | Where-Object {$_.Name -like "enaio*" -or $_.DisplayName -like "enaio*"}
+#Name der Dienste mit "enaio" anzeigen: 
+Get-Service -Name "enaio*"
+#Displayname der Dienste mit "enaio" anzeigen: 
+Get-Service -DisplayName "enaio*"
+
+#2
+#eine exe-Datei als Administrator ausführen: 
+Start-Process die_exe_datei.exe -Verb RunAs
+
+#3
+#System-Dienste öffnen: 
+Start-Process services.msc
+
+#4
+#such den Pfad von Notepad++.exe
+Get-ChildItem -Path "C:\" -Filter "notepad++.exe" -Recurse -ErrorAction SilentlyContinue
+
+#5
+#mit "n" in Powershell Notepad.exe öffnen
+#in $PROFILE schreiben: 
+Set-Alias n "C:\Program Files\Notepad++\notepad++.exe"
+
+#6
+#in Notepad++ etwas suchen: 
+strg + f
+
+#7
+
+
+
+
