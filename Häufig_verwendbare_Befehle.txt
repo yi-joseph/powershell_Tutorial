@@ -34,6 +34,17 @@ strg + f
 # Aufgabenplanung von Windows-Server-Manager öffnen: 
 Start-Process taskschd.msc
 
+#8
+# schiebe eine Datei in einen anderen Ordner: 
+# Voraussetzungen: 
+# die Datei muss ausgeschaltet werden. 
+# Powershell muss als Administrator ausgeführt werden. 
+Move-Item -Path "D:\Enaio\AutomatischeAktionen\Remove-Logfiles.ps1" -Destination "D:\Enaio\AutomatischeAktionen\Hilfsfunktionen\"
+
+#9
+# 
+
+
 
 
 
