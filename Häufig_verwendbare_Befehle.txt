@@ -42,7 +42,10 @@ Start-Process taskschd.msc
 Move-Item -Path "D:\Enaio\AutomatischeAktionen\Remove-Logfiles.ps1" -Destination "D:\Enaio\AutomatischeAktionen\Hilfsfunktionen\"
 
 #9
-# 
+# Anzahl der Dateien eines Ordners anzeigen: 
+(Get-ChildItem .\Events\ -File -Recurse).Count
+
+
 
 
 
