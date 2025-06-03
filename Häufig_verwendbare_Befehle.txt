@@ -45,6 +45,14 @@ Move-Item -Path "D:\Enaio\AutomatischeAktionen\Remove-Logfiles.ps1" -Destination
 # Anzahl der Dateien eines Ordners anzeigen: 
 (Get-ChildItem .\Events\ -File -Recurse).Count
 
+# 10
+# Datei rename
+Rename-Item dateiname -NewName newdateiname
+# wenn es viele ".txt"-Dateien in dem Ordner gibt, dann kann man mit folgendem Befehl alle in ".vbs"-Dateien umbenennen:
+Get-ChildItem -Path Ordnerpfad -Filter "*.txt" | Rename-Item -NewName {$_.Name -replace '\.txt$', '.vbs' }
+
+
+
 
 
 
