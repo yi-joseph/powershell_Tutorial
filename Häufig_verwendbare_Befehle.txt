@@ -51,6 +51,13 @@ Rename-Item dateiname -NewName newdateiname
 # wenn es viele ".txt"-Dateien in dem Ordner gibt, dann kann man mit folgendem Befehl alle in ".vbs"-Dateien umbenennen:
 Get-ChildItem -Path Ordnerpfad -Filter "*.txt" | Rename-Item -NewName {$_.Name -replace '\.txt$', '.vbs' }
 
+# 11
+# Wenn ein Programm wegen Fehlers nicht vollständig installiert wird und die Installationsdateien nicht gelöscht werden können:
+# Powershell: 
+Repair-Volume -DriveLetter C -Scan
+# oder CMD:
+chkdsk D: /F
+# Danach geht man wieder in den Ordner ein und löscht die Installationsdateien einfach. 
 
 
 
