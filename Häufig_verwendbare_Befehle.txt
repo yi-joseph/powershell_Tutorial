@@ -26,6 +26,24 @@ Get-ChildItem -Path "C:\" -Filter "notepad++.exe" -Recurse -ErrorAction Silently
 # in $PROFILE schreiben: 
 Set-Alias n "C:\Program Files\Notepad++\notepad++.exe"
 
+# Hier ist der Fehler: 
+Test-Path $PROFILE
+False
+
+# Zuerst erstelle ich eine §PROFILE
+New-Item -Path $PROFILE -ItemType File -Force
+# Hier wird ein Ordner mit der Powershell.Datei erstell: 
+Verzeichnis: C:\Users\adm_enaio\Documents\WindowsPowerShell
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10.06.2025     12:07              0 Microsoft.PowerShell_profile.ps1
+
+# Jetzt öffne ich das Powershell-Script mit Notepad und schreibe die obige Zeile darein und speichere die Datei. 
+# Zudem mache ich die Console von Powershell zu und öffne die wieder, jetzt kann ich mit "n" "Notepad" öffnen.
+
+
 #6
 # in Notepad++ etwas suchen: 
 strg + f
