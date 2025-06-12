@@ -7,7 +7,8 @@
 # Hier ist mein erster Versuch, das Powershell-Script für Erstellung der Ordner zu schreiben
 # Die Ordner für Enaio-Applikationen und -Dienste erstellen
 # Mit Array werden alle Ordner abgelegt
-# Mit einer foreach-Schleife werden die Ordner erstellt und die dazugehörigen Berechtigungen eingestellt. 
+# Mit einer foreach-Schleife werden die Ordner erstellt und die dazugehörigen Berechtigungen eingestellt.
+# Status: noch nicht getestet.
 
 
 # Vorbereitung: Array und Funktionen deklarieren
