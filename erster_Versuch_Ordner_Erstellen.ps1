@@ -90,7 +90,7 @@ $berechtigungsOrdnerListe = @(
 	# Für D:\Enaio
 	"D:\Enaio\Addons", 
 	"D:\Enaio\Installations_CD", 
-	"D:\Enaio\Protokolle", 
+	"D:\Enaio\Protokolle"
 )
 
 # Funktion für Einstellung der Berechtigung
