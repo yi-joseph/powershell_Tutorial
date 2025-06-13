@@ -77,6 +77,20 @@ Repair-Volume -DriveLetter C -Scan
 chkdsk D: /F
 # Danach geht man wieder in den Ordner ein und löscht die Installationsdateien einfach. 
 
+# 12
+# History für Powershell-Befehle schauen
+# Hier ist dauerhafte History für Befehle
+cd C:\Users\yi\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine>
+dir
+.\ConsoleHost_history.txt
+# Hier ist kurzzeitige History für Befehle
+h
+# oder 
+# Get-History
+
+
+
+
 
 
 
