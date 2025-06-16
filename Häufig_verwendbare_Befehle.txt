@@ -88,6 +88,9 @@ h
 # oder 
 # Get-History
 
+# 13
+# explorer öffnen: 
+explorer
 
 
 
