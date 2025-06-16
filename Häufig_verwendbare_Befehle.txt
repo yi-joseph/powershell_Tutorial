@@ -43,6 +43,24 @@ Mode                 LastWriteTime         Length Name
 # Jetzt öffne ich das Powershell-Script mit Notepad und schreibe die obige Zeile darein und speichere die Datei. 
 # Zudem mache ich die Console von Powershell zu und öffne die wieder, jetzt kann ich mit "n" "Notepad" öffnen.
 
+# Zusammenfassen: 
+cd .\Downloads\
+# Installieren als Adminsitrator
+Start-Process .\npp.8.7.7.Installer.x64.exe -Verb RunAs
+# Jetzt konfiguriere ich Notepad++ in $PROFIEL
+Test-Path $PROFILE
+# Wenn False,
+# dann erstelle ich eine §PROFILE
+New-Item -Path $PROFILE -ItemType File -Force
+# Jetzt öffne ich das Powershell-Script mit Notepad und schreibe die obige Zeile darein und speichere die Datei.
+cd C:\Users\yi\Documents\WindowsPowerShell
+notepad .\Microsoft.PowerShell_profile.ps1
+Set-Alias n "C:\Program Files\Notepad++\notepad++.exe"
+# Jetzt mache ich die Console von Powershell zu und öffne die wieder, jetzt kann ich mit "n" "Notepad" öffnen.
+n test.txt
+dir
+Remove-Item .\test.txt
+# Jetzt sollte es funktionieren. 
 
 #6
 # in Notepad++ etwas suchen: 
