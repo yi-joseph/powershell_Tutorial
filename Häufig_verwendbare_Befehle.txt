@@ -1,12 +1,12 @@
 #1
 # enaio Dienste per powershell anzeigen: 
 # Achtung: nicht nur name sonderauch displayname
-Get-Service | Where-Object {$_.Name -like "enaio*" -or $_.DisplayName -like "enaio*"}
+Get-Service | Where-Object {$_.Name -like "microsoft*" -or $_.DisplayName -like "enaio*"}
 
-# Name der Dienste mit "enaio" anzeigen: 
-Get-Service -Name "enaio*"
+# Name der Dienste mit "microsoft" anzeigen: 
+Get-Service -Name "microsoft*"
 
-# Displayname der Dienste mit "enaio" anzeigen: 
+# Displayname der Dienste mit "microsoft" anzeigen: 
 Get-Service -DisplayName "enaio*"
 
 #2
@@ -75,7 +75,7 @@ Start-Process taskschd.msc
 # Voraussetzungen: 
 # die Datei muss ausgeschaltet werden. 
 # Powershell muss als Administrator ausgeführt werden. 
-Move-Item -Path "D:\Enaio\AutomatischeAktionen\Remove-Logfiles.ps1" -Destination "D:\Enaio\AutomatischeAktionen\Hilfsfunktionen\"
+Move-Item -Path "D:\Remove.ps1" -Destination "D:\EinenOrdnerInD"
 
 #9
 # Anzahl der Dateien eines Ordners anzeigen: 
