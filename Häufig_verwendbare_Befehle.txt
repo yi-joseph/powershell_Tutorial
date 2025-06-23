@@ -7,7 +7,7 @@ Get-Service | Where-Object {$_.Name -like "microsoft*" -or $_.DisplayName -like 
 Get-Service -Name "microsoft*"
 
 # Displayname der Dienste mit "microsoft" anzeigen: 
-Get-Service -DisplayName "enaio*"
+Get-Service -DisplayName "microsoft*"
 
 #2
 # eine exe-Datei als Administrator ausführen: 
