@@ -1,6 +1,6 @@
 # Von Christian.
 
-$services = get-service -name *enaio*,*elastic*
+$services = get-service -name *NamenderDienste*,*NamenderDienste*
 
 foreach ($item in $services)
 {
