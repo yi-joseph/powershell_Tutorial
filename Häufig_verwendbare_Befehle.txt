@@ -110,6 +110,11 @@ h
 # explorer öffnen: 
 explorer
 
+# 14
+# Ordner mit seinen Dateien kopieren
+# mit "-Recurse"
+Copy-Item .\05-2025\ -Destination 06-2025 -Recurse
+
 
 
 
