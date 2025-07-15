@@ -115,6 +115,11 @@ explorer
 # mit "-Recurse"
 Copy-Item .\05-2025\ -Destination 06-2025 -Recurse
 
+# 15
+# Windows Register öffnen
+regedit
+
+
 
 
 
