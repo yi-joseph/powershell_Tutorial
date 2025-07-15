@@ -1,0 +1,4 @@
+# Battery Report per Powershell erstellen und lesen
+powercfg /batteryreport
+# dann wird eine HTML-Datei erstellt.
+# Jetzt kann man gucken, ob die Akku gesund ist. 
