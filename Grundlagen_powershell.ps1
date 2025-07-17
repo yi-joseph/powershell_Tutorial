@@ -21,4 +21,8 @@ Write-Host "Hallo $Name, hier ist die Welt von Powershell! `n"
 $Datum = Get-Date
 Write-Host "Heute ist $Datum `n"
 
-
+# 3 Namen in einem Fenster eingeben und dann grüßen
+# Hier ist ein Programm von Grüßen
+# Read-Host hat schon ein ":"
+$Name = Read-Host "Wie heissen Sie? Bitte geben Sie Ihren Namen ein"
+Write-Host "Hallo $Name, hier ist die Welt von Powershell! `n"
