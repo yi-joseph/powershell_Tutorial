@@ -111,9 +111,10 @@ h
 explorer
 
 # 14
-# Ordner mit seinen Dateien kopieren
+# Ordner mit seinen Dateien kopieren und neuen Name geben
 # mit "-Recurse"
 Copy-Item .\05-2025\ -Destination 06-2025 -Recurse
+
 
 # 15
 # Windows Register öffnen
