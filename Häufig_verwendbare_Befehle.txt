@@ -120,6 +120,10 @@ Copy-Item .\05-2025\ -Destination 06-2025 -Recurse
 # Windows Register öffnen
 regedit
 
+# 16
+# Frage nach den Serielnummer, damit ich bei Lenovo suche, wie viele Garantie ich noch habe. 
+wmic bios get serialnumber
+# dann öffne ich die Webseite von lenovo garantie, dann gebe ich die Serielnummer. 
 
 
 
